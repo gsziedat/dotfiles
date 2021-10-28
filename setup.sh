@@ -7,7 +7,7 @@ if [ "$CODESPACES" = "true" ]; then
     fi
     eval `cat $HOME/.ssh/ssh-agent`
   fi
-  # Add my SSH key.
+  # Add my SSH key. 
   if [ -n "${PERSONAL_SSH_KEY+1}" ]; then
     ssh-add - <<< "${PERSONAL_SSH_KEY}"
   fi
